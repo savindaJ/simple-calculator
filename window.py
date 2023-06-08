@@ -189,7 +189,7 @@ b12 = Button(
     relief = "flat")
 
 b12.place(
-    x = 200, y = 400,
+    x = 180, y = 425,
     width = 87,
     height = 39)
 
@@ -202,7 +202,7 @@ b13 = Button(
     relief = "flat")
 
 b13.place(
-    x = 100, y = 400,
+    x = 80, y = 425,
     width = 87,
     height = 39)
 
