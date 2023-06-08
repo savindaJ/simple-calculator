@@ -15,11 +15,48 @@ v = tk.StringVar()
 def set_text(value):
     # text1=entry1.get()
     entry1.insert(0, value)
+    # entry1.entry1
     # v.set(word)
 
 
-def button_clicked():
+def button_1():
     set_text("1")
+
+
+def button_2():
+    set_text("2")
+
+
+def button_3():
+    set_text("3")
+
+
+def button_4():
+    set_text("4")
+
+
+def button_5():
+    set_text("5")
+
+
+def button_6():
+    set_text("6")
+
+
+def button_7():
+    set_text("7")
+
+
+def button_8():
+    set_text("8")
+
+
+def button_9():
+    set_text("9")
+
+
+def button_0():
+    set_text("0")
 
 
 window.geometry("350x500")
@@ -44,7 +81,7 @@ b0 = Button(
     image=img0,
     borderwidth=0,
     highlightthickness=0,
-    command=button_clicked,
+    command=button_1,
     relief="flat")
 
 b0.place(
@@ -96,7 +133,7 @@ b4 = Button(
     image=img4,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_2,
     relief="flat")
 
 b4.place(
@@ -109,7 +146,7 @@ b5 = Button(
     image=img5,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_3,
     relief="flat")
 
 b5.place(
@@ -122,7 +159,7 @@ b6 = Button(
     image=img6,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_4,
     relief="flat")
 
 b6.place(
@@ -135,7 +172,7 @@ b7 = Button(
     image=img7,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_5,
     relief="flat")
 
 b7.place(
@@ -148,7 +185,7 @@ b8 = Button(
     image=img8,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_6,
     relief="flat")
 
 b8.place(
@@ -161,7 +198,7 @@ b9 = Button(
     image=img9,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_7,
     relief="flat")
 
 b9.place(
@@ -174,7 +211,7 @@ b10 = Button(
     image=img10,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_8,
     relief="flat")
 
 b10.place(
@@ -187,7 +224,7 @@ b11 = Button(
     image=img11,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_9,
     relief="flat")
 
 b11.place(
@@ -200,7 +237,7 @@ b12 = Button(
     image=img12,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_0,
     relief="flat")
 
 b12.place(
