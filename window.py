@@ -217,7 +217,7 @@ entry0 = Entry(
     highlightthickness = 0)
 
 entry0.place(
-    x = 320.0, y = 162,
+    x = 40.0, y = 120,
     width = 281.0,
     height = 35)
 
@@ -232,7 +232,7 @@ entry1 = Entry(
     highlightthickness = 0)
 
 entry1.place(
-    x = -320.0, y = -103,
+    x = 40.0, y = 68,
     width = 281.0,
     height = 35)
 
