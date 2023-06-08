@@ -111,7 +111,7 @@ b6 = Button(
     relief = "flat")
 
 b6.place(
-    x = 25, y = 250,
+    x = 25, y = 270,
     width = 87,
     height = 39)
 
@@ -124,7 +124,7 @@ b7 = Button(
     relief = "flat")
 
 b7.place(
-    x = 140, y = 250,
+    x = 140, y = 270,
     width = 87,
     height = 39)
 
@@ -137,7 +137,7 @@ b8 = Button(
     relief = "flat")
 
 b8.place(
-    x = 100, y = 112,
+    x = 250, y = 270,
     width = 87,
     height = 41)
 
@@ -150,7 +150,7 @@ b9 = Button(
     relief = "flat")
 
 b9.place(
-    x = -330, y = 191,
+    x = 25, y = 340,
     width = 87,
     height = 41)
 
@@ -163,7 +163,7 @@ b10 = Button(
     relief = "flat")
 
 b10.place(
-    x = -223, y = 193,
+    x = 140, y = 340,
     width = 87,
     height = 41)
 
@@ -176,7 +176,7 @@ b11 = Button(
     relief = "flat")
 
 b11.place(
-    x = 25, y = 300,
+    x = 250, y = 340,
     width = 87,
     height = 41)
 
@@ -189,7 +189,7 @@ b12 = Button(
     relief = "flat")
 
 b12.place(
-    x = 284, y = 246,
+    x = 200, y = 400,
     width = 87,
     height = 39)
 
@@ -202,7 +202,7 @@ b13 = Button(
     relief = "flat")
 
 b13.place(
-    x = 167, y = 248,
+    x = 100, y = 400,
     width = 87,
     height = 39)
 
