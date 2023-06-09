@@ -1,6 +1,10 @@
 from tkinter import *
 import tkinter as tk
 
+num1 = 0
+number2 = 0
+operator = ""
+
 
 def btn_clicked():
     # entry0.
@@ -60,23 +64,34 @@ def button_0():
 
 
 def button_plus():
+    operator = "+"
     set_text("+")
+    num1 = int(entry1.get())
+    print(num1)
 
 
 def button_minas():
+    operator = "-"
     set_text("-")
 
 
 def button_division():
+    operator = "/"
     set_text("/")
 
 
-def button_multiply():
-    set_text("*")
+# def button_multiply():
+#     set_text("*")
 
 
 def calculate():
-    print("calculate !")
+    num2 = int(entry1.get())
+    if operator == "+":
+        plus = num1 + number2
+    elif operator == "-":
+        minez = number2 - num1
+    else:
+        division = num1 / number2
 
 
 window.geometry("350x500")
