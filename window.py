@@ -18,7 +18,7 @@ v = tk.StringVar()
 
 def set_text(value):
     # text1=entry1.get()
-    entry1.insert(0, value)
+    entry1.insert(1000, value)
     # entry1.entry1
     # v.set(word)
 
@@ -65,8 +65,8 @@ def button_0():
 
 def button_plus():
     operator = "+"
-    set_text("+")
     num1 = int(entry1.get())
+    set_text("+")
     print(num1)
 
 
@@ -324,5 +324,5 @@ entry1.place(
     width=281.0,
     height=35)
 
-window.resizable(True, True)
+window.resizable(False, False)
 window.mainloop()
