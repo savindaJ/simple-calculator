@@ -3,7 +3,7 @@ import tkinter as tk
 
 num1 = 0
 number2 = 0
-operator = ""
+operator = 0
 
 
 def btn_clicked():
@@ -64,21 +64,21 @@ def button_0():
 
 
 def button_plus():
-    operator = "+"
+    operator = int(1)
     num1 = int(entry1.get())
     set_text("+")
     print(num1)
 
 
 def button_minas():
-    operator = "-"
+    operator = 2
     num1 = int(entry1.get())
     set_text("-")
     print(num1)
 
 
 def button_division():
-    operator = "/"
+    operator = '/'
     num1 = int(entry1.get())
     set_text("/")
     print(num1)
@@ -89,23 +89,46 @@ def button_division():
 
 
 def calculate():
+    strcopy = ""
     num = str(entry1.get())
     x = int(len(entry1.get()))
+    index = 0
+    copy_index = index
     # print(x)
     for i in range(0, x):
         if num[i] == '+':
-            print("plus "+str(i))
+            index = i
+            print("plus " + str(i) + str(num[i]))
+        elif num[i] == '-':
+            index = i
+            print("mines " + str(i))
+        elif num[i] == '/':
+            index = i
+            print("division " + str(i))
 
-    # num2 = int(entry1.get())
-    # if operator == "+":
-    #     plus = num1 + number2
-    #     entry0.insert(1000, str(plus))
-    # elif operator == "-":
-    #     minez = number2 - num1
-    #     entry0.insert(1000, str(minez))
-    # else:
-    #     division = num1 / number2
-    #     entry0.insert(1000, str(division))
+    coun = int(len(entry1.get())) - index
+    for c in range(0, coun - 1):
+        index = index + 1
+        strcopy = strcopy + num[index]
+    print(strcopy)
+    number2 = int(strcopy)
+    print("int number :" + str(number2))
+    print("oparator ->"+str(operator))
+
+    if operator == 1:
+        print("number 1 is :"+str(num1))
+        print("number 2 is :"+str(number2))
+        plus = num1 + number2
+        entry0.insert(1000, str(plus))
+        print(plus)
+    elif operator == 2:
+        minez = number2 - num1
+        entry0.insert(1000, str(minez))
+        print(minez)
+    else:
+        division = num1 / number2
+        entry0.insert(1000, str(division))
+        print(division)
 
 
 window.geometry("350x500")
