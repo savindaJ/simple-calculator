@@ -72,12 +72,16 @@ def button_plus():
 
 def button_minas():
     operator = "-"
+    num1 = int(entry1.get())
     set_text("-")
+    print(num1)
 
 
 def button_division():
     operator = "/"
+    num1 = int(entry1.get())
     set_text("/")
+    print(num1)
 
 
 # def button_multiply():
