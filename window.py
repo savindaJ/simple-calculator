@@ -64,6 +64,8 @@ def button_0():
 
 
 def button_plus():
+    global operator
+    global num1
     operator = int(1)
     num1 = int(entry1.get())
     set_text("+")
@@ -71,6 +73,8 @@ def button_plus():
 
 
 def button_minas():
+    global operator
+    global num1
     operator = 2
     num1 = int(entry1.get())
     set_text("-")
@@ -78,6 +82,8 @@ def button_minas():
 
 
 def button_division():
+    global operator
+    global num1
     operator = '/'
     num1 = int(entry1.get())
     set_text("/")
@@ -89,6 +95,7 @@ def button_division():
 
 
 def calculate():
+    global number2
     strcopy = ""
     num = str(entry1.get())
     x = int(len(entry1.get()))
@@ -113,16 +120,16 @@ def calculate():
     print(strcopy)
     number2 = int(strcopy)
     print("int number :" + str(number2))
-    print("oparator ->"+str(operator))
+    print("oparator ->" + str(operator))
 
     if operator == 1:
-        print("number 1 is :"+str(num1))
-        print("number 2 is :"+str(number2))
+        print("number 1 is :" + str(num1))
+        print("number 2 is :" + str(number2))
         plus = num1 + number2
         entry0.insert(1000, str(plus))
         print(plus)
     elif operator == 2:
-        minez = number2 - num1
+        minez = num1-number2
         entry0.insert(1000, str(minez))
         print(minez)
     else:
