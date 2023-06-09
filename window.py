@@ -59,6 +59,22 @@ def button_0():
     set_text("0")
 
 
+def button_plus():
+    set_text("+")
+
+
+def button_minas():
+    set_text("-")
+
+
+def button_division():
+    set_text("/")
+
+
+def button_multiply():
+    set_text("*")
+
+
 window.geometry("350x500")
 window.configure(bg="#ffffff")
 canvas = Canvas(
@@ -94,39 +110,39 @@ b1 = Button(
     image=img1,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_plus,
     relief="flat")
 
 b1.place(
-    x=-330, y=-34,
-    width=87,
-    height=39)
+    x=8, y=20,
+    width=70,
+    height=40)
 
 img2 = PhotoImage(file=f"img2.png")
 b2 = Button(
     image=img2,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_minas,
     relief="flat")
 
 b2.place(
-    x=-223, y=-35,
-    width=87,
-    height=39)
+    x=90, y=20,
+    width=70,
+    height=40)
 
 img3 = PhotoImage(file=f"img3.png")
 b3 = Button(
     image=img3,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=button_division,
     relief="flat")
 
 b3.place(
-    x=-116, y=-34,
-    width=87,
-    height=39)
+    x=170, y=20,
+    width=70,
+    height=40)
 
 img4 = PhotoImage(file=f"img4.png")
 b4 = Button(
