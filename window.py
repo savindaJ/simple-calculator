@@ -1,5 +1,6 @@
 from tkinter import *
 import tkinter as tk
+from tkinter import messagebox
 
 num1 = 0
 number2 = 0
@@ -67,27 +68,39 @@ def button_plus():
     global operator
     global num1
     operator = int(1)
-    num1 = int(entry1.get())
+    try:
+        num1 = int(entry1.get())
+    except ValueError:
+        messagebox.showerror('Error !', 'this feature not development we will complicate this !!')
+        return
     set_text("+")
-    print(num1)
+    # print(num1)
 
 
 def button_minas():
     global operator
     global num1
     operator = 2
-    num1 = int(entry1.get())
+    try:
+        num1 = int(entry1.get())
+    except ValueError:
+        messagebox.showerror('Error !', 'this feature not development we will complicate this !!')
+        return
     set_text("-")
-    print(num1)
+    # print(num1)
 
 
 def button_division():
     global operator
     global num1
     operator = '/'
-    num1 = int(entry1.get())
+    try:
+        num1 = int(entry1.get())
+    except ValueError:
+        messagebox.showerror('Error !', 'this feature not development we will complicate this !!')
+        return
     set_text("/")
-    print(num1)
+    # print(num1)
 
 
 # def button_multiply():
@@ -105,37 +118,37 @@ def calculate():
     for i in range(0, x):
         if num[i] == '+':
             index = i
-            print("plus " + str(i) + str(num[i]))
+            # print("plus " + str(i) + str(num[i]))
         elif num[i] == '-':
             index = i
-            print("mines " + str(i))
+            # print("mines " + str(i))
         elif num[i] == '/':
             index = i
-            print("division " + str(i))
+            # print("division " + str(i))
 
     coun = int(len(entry1.get())) - index
     for c in range(0, coun - 1):
         index = index + 1
         strcopy = strcopy + num[index]
-    print(strcopy)
+    # print(strcopy)
     number2 = int(strcopy)
-    print("int number :" + str(number2))
-    print("oparator ->" + str(operator))
+    # print("int number :" + str(number2))
+    # print("oparator ->" + str(operator))
 
     if operator == 1:
-        print("number 1 is :" + str(num1))
-        print("number 2 is :" + str(number2))
+        # print("number 1 is :" + str(num1))
+        # print("number 2 is :" + str(number2))
         plus = num1 + number2
         entry0.insert(1000, str(plus))
-        print(plus)
+        # print(plus)
     elif operator == 2:
         minez = num1-number2
         entry0.insert(1000, str(minez))
-        print(minez)
+        # print(minez)
     else:
         division = num1 / number2
         entry0.insert(1000, str(division))
-        print(division)
+        # print(division)
 
 
 window.geometry("350x500")
