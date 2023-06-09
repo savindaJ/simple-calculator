@@ -89,13 +89,23 @@ def button_division():
 
 
 def calculate():
-    num2 = int(entry1.get())
-    if operator == "+":
-        plus = num1 + number2
-    elif operator == "-":
-        minez = number2 - num1
-    else:
-        division = num1 / number2
+    num = str(entry1.get())
+    x = int(len(entry1.get()))
+    # print(x)
+    for i in range(0, x):
+        if num[i] == '+':
+            print("plus "+str(i))
+
+    # num2 = int(entry1.get())
+    # if operator == "+":
+    #     plus = num1 + number2
+    #     entry0.insert(1000, str(plus))
+    # elif operator == "-":
+    #     minez = number2 - num1
+    #     entry0.insert(1000, str(minez))
+    # else:
+    #     division = num1 / number2
+    #     entry0.insert(1000, str(division))
 
 
 window.geometry("350x500")
