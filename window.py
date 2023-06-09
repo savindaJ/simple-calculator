@@ -350,6 +350,9 @@ b13.place(
     width=87,
     height=39)
 
+first_name = Label(window, text='developed by SavindaJayasekara !', fg='black', bg='white', font=('Calibre', 7, 'bold'))
+first_name.place(x=190, y=480)
+
 entry0_img = PhotoImage(file=f"img_textBox0.png")
 entry0_bg = canvas.create_image(
     -179.5, -143.5,
