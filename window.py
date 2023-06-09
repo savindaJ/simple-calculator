@@ -75,6 +75,10 @@ def button_multiply():
     set_text("*")
 
 
+def calculate():
+    print("calculate !")
+
+
 window.geometry("350x500")
 window.configure(bg="#ffffff")
 canvas = Canvas(
@@ -266,7 +270,7 @@ b13 = Button(
     image=img13,
     borderwidth=0,
     highlightthickness=0,
-    command=btn_clicked,
+    command=calculate,
     relief="flat")
 
 b13.place(
