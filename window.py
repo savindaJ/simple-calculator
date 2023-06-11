@@ -18,10 +18,7 @@ v = tk.StringVar()
 
 
 def set_text(value):
-    # text1=entry1.get()
     entry1.insert(1000, value)
-    # entry1.entry1
-    # v.set(word)
 
 
 def button_1():
@@ -74,7 +71,6 @@ def button_plus():
         messagebox.showerror('Error !', 'this feature not development we will complicate this !!')
         return
     set_text("+")
-    # print(num1)
 
 
 def button_minas():
@@ -87,7 +83,6 @@ def button_minas():
         messagebox.showerror('Error !', 'this feature not development we will complicate this !!')
         return
     set_text("-")
-    # print(num1)
 
 
 def button_division():
@@ -100,11 +95,6 @@ def button_division():
         messagebox.showerror('Error !', 'this feature not development we will complicate this !!')
         return
     set_text("/")
-    # print(num1)
-
-
-# def button_multiply():
-#     set_text("*")
 
 
 def calculate():
@@ -113,42 +103,30 @@ def calculate():
     num = str(entry1.get())
     x = int(len(entry1.get()))
     index = 0
-    copy_index = index
-    # print(x)
     for i in range(0, x):
         if num[i] == '+':
             index = i
-            # print("plus " + str(i) + str(num[i]))
         elif num[i] == '-':
             index = i
-            # print("mines " + str(i))
         elif num[i] == '/':
             index = i
-            # print("division " + str(i))
 
     coun = int(len(entry1.get())) - index
     for c in range(0, coun - 1):
         index = index + 1
         strcopy = strcopy + num[index]
-    # print(strcopy)
+
     number2 = int(strcopy)
-    # print("int number :" + str(number2))
-    # print("oparator ->" + str(operator))
 
     if operator == 1:
-        # print("number 1 is :" + str(num1))
-        # print("number 2 is :" + str(number2))
         plus = num1 + number2
         entry0.insert(1000, str(plus))
-        # print(plus)
     elif operator == 2:
         minez = num1-number2
         entry0.insert(1000, str(minez))
-        # print(minez)
     else:
         division = num1 / number2
         entry0.insert(1000, str(division))
-        # print(division)
 
 
 window.geometry("350x500")
