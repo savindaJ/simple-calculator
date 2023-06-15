@@ -17,6 +17,11 @@ window = Tk()
 v = tk.StringVar()
 
 
+def button_clear():
+    entry1.delete(0, END)
+    entry0.delete(0, END)
+
+
 def set_text(value):
     entry1.insert(1000, value)
 
@@ -122,7 +127,7 @@ def calculate():
         plus = num1 + number2
         entry0.insert(1000, str(plus))
     elif operator == 2:
-        minez = num1-number2
+        minez = num1 - number2
         entry0.insert(1000, str(minez))
     else:
         division = num1 / number2
@@ -294,7 +299,7 @@ clear = Button(
     image=imgclear,
     borderwidth=0,
     highlightthickness=0,
-    command=button_8,
+    command=button_clear,
     relief="flat")
 
 clear.place(
@@ -307,7 +312,7 @@ b11 = Button(
     image=img11,
     borderwidth=0,
     highlightthickness=0,
-    command=button_9,
+    command=button_8,
     relief="flat")
 
 b11.place(
