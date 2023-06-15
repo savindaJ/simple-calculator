@@ -298,9 +298,9 @@ clear = Button(
     relief="flat")
 
 clear.place(
-    x=270, y=20,
-    width=87,
-    height=41)
+    x=260, y=20,
+    width=70,
+    height=40)
 
 img11 = PhotoImage(file=f"img11.png")
 b11 = Button(
