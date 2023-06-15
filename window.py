@@ -18,9 +18,10 @@ v = tk.StringVar()
 
 
 def button_clear():
+    global operator
     entry1.delete(0, END)
     entry0.delete(0, END)
-
+    operator=0
 
 def set_text(value):
     entry1.insert(1000, value)
