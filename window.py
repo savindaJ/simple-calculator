@@ -121,7 +121,11 @@ def calculate():
         index = index + 1
         strcopy = strcopy + num[index]
 
-    number2 = int(strcopy)
+    try:
+        number2 = int(strcopy)
+    except:
+        messagebox.showerror('Error !', 'please insert your operation ! ex -> 10+10 enter first Entry !')
+        return
 
     if operator == 1:
         plus = num1 + number2
