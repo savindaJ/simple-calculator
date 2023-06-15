@@ -289,6 +289,19 @@ b10.place(
     width=87,
     height=41)
 
+imgclear = PhotoImage(file=f"clear.png")
+clear = Button(
+    image=imgclear,
+    borderwidth=0,
+    highlightthickness=0,
+    command=button_8,
+    relief="flat")
+
+clear.place(
+    x=270, y=20,
+    width=87,
+    height=41)
+
 img11 = PhotoImage(file=f"img11.png")
 b11 = Button(
     image=img11,
